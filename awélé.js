@@ -33,6 +33,13 @@ class Plateau {
         }
         console.log("plateau reset");
     }
+
+    //saw(//combien? //zone?) { 
+        //stack de graine initialiser 
+        // retirer combien? à zone?
+        // ajouter combien? a stack de graine
+        // elenver 1 à stack de graine et ajouter 1 à zone? +1 
+    }
  
 
 }

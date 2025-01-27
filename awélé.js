@@ -57,6 +57,14 @@ class Plateau {
        } // enlever 1 à sawstack et ajouter 1 à place +1 tant qu'il y a des graines 
        this.display()
     }
+
+    harvest() {
+        //part de la dernière case remplis 
+        // vérifie si cette case vaux 2 ou 3 
+        // si c'est le cas le joueur gagne 2 ou 3 points 
+        // vérifie la propriété sur la case d'avant 
+        // sinon c'est au tour de l'adversaire de semer 
+    }
  
 
 }

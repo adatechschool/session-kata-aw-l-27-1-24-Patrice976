@@ -1,17 +1,17 @@
 class Plateau {
     constructor(){
-        this.case = {"A" : 1,
-                     "B" : 0,
-                     "C" : 2,
+        this.case = {"A" : 4,
+                     "B" : 4,
+                     "C" : 4,
                      "D" : 4,
-                     "E" : 1,
+                     "E" : 4,
                      "F" : 4,
-                     "G" : 5,
-                     "H" : 5,
-                     "I" : 1,
-                     "J" : 7, 
-                     "K" : 8,
-                     "L" : 2
+                     "G" : 4,
+                     "H" : 4,
+                     "I" : 4,
+                     "J" : 4, 
+                     "K" : 4,
+                     "L" : 4
 
         }
 
@@ -48,3 +48,19 @@ test.isEmpty();
 console.log("2nd display");
 test.display();
 
+class Joueur {
+ constructor(nom) {
+    this.nom = nom;
+    this.score = 0 
+
+ }
+
+ earn (x) {
+    this.score += x;
+    console.log(`${this.nom} à ${this.score} points`);
+ }
+}
+
+patrice = new Joueur("Patrice")
+
+patrice.earn(6)

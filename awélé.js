@@ -21,15 +21,17 @@ class Plateau {
 
     display () {
         console.log (this.case)
-        
+       
+
+
     };
 
     isEmpty () {
-        for (let index = 0; index < this.caseIndexNavigator.lenghth; index++) {
-            this.case[this.caseIndexNavigator[index]] = 0;            
+        for (let index = 0; index < this.caseIndexNavigator.length; index++) {
+            this.case[this.caseIndexNavigator[index]] = 0;
+                    
         }
         console.log("plateau reset");
-        console.log(this.case)
     }
  
 
@@ -43,5 +45,6 @@ test.display();
 console.log("on reset le plateau");
 test.isEmpty();
 
-("second display");
+console.log("2nd display");
 test.display();
+

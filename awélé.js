@@ -15,16 +15,19 @@ class Plateau {
 
         }
 
+        this.caseIndexNavigator = ['A','B','C','D','E','F','G','H','I','J','K','L']
+
     };
 
     display () {
         console.log (this.case)
+        console.log (this.case["A"])
+        console.log (this.caseIndexNavigator[0])
+        console.log(this.case[this.caseIndexNavigator[0]])
     }
 
     isEmpty () {
-        for (var i in this.case) {
-            this.case[i] = 0
-        }
+    
     }
  
 
@@ -35,8 +38,8 @@ test = new Plateau()
 console.log("1er display")
 test.display()
 
-console.log("on reset le plateau")
-test.isEmpty()
+// console.log("on reset le plateau")
+// test.isEmpty()
 
-("second display")
-test.display()
+// ("second display")
+// test.display()

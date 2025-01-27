@@ -21,25 +21,27 @@ class Plateau {
 
     display () {
         console.log (this.case)
-        console.log (this.case["A"])
-        console.log (this.caseIndexNavigator[0])
-        console.log(this.case[this.caseIndexNavigator[0]])
-    }
+        
+    };
 
     isEmpty () {
-    
+        for (let index = 0; index < this.caseIndexNavigator.lenghth; index++) {
+            this.case[this.caseIndexNavigator[index]] = 0;            
+        }
+        console.log("plateau reset");
+        console.log(this.case)
     }
  
 
 }
 
-test = new Plateau()
+test = new Plateau();
 
-console.log("1er display")
-test.display()
+console.log("1er display");
+test.display();
 
-// console.log("on reset le plateau")
-// test.isEmpty()
+console.log("on reset le plateau");
+test.isEmpty();
 
-// ("second display")
-// test.display()
+("second display");
+test.display();
